@@ -2,12 +2,10 @@
 # import Org from 'org.gql'
 # import User from 'user.gql'
 # import Role from 'role.gql'
-# import UserRole from 'userrole.gql'
 
 type Query {
     org(query: OrgInput): OrgOutput
     user(query: UserInput): UserOutput
     role(query: RoleInput): RoleOutput
-    userrole(query: UserRoleInput): UserRoleOutput
 }
 

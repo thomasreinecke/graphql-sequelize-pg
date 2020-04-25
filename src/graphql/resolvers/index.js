@@ -21,7 +21,6 @@ export default {
   Query: {
     user: (parent, args, { db }, info) => db.getUser( args, info ),
     org: (parent, args, { db }, info) => db.getOrg( args, info ),
-    role: (parent, args, { db }, info) => db.getRole( args, info ),
-    userrole: (parent, args, { db }, info) => db.getUserRole( args, info ) 
+    role: (parent, args, { db }, info) => db.getRole( args, info )
   }
 };
