@@ -1,0 +1,19 @@
+type Org {
+    id: ID
+    name: String
+}
+
+input OrgInput {
+    id: ID
+    name: String
+}
+
+input OrgRecordInput {
+    id: ID
+    name: String
+}
+
+type OrgOutput {
+    count: Int
+    data: [Org]
+}

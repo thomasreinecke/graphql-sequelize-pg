@@ -1,0 +1,18 @@
+type Role {
+    id: ID
+    name: String
+}
+
+input RoleInput {
+    id: ID
+    name: String
+}
+
+input RoleRecordInput {
+    id: ID
+}
+
+type RoleOutput {
+    count: Int
+    data: [Role]
+}
