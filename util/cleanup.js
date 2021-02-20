@@ -1,7 +1,7 @@
 
 import db from '../src/db'
 
-// synchronize the sequilize mode with postgres (and alters the database if needed)
+// synchronize the sequelize mode with postgres (and alters the database if needed)
 console.log('Attention : db schema recreate started...');
 db.sequelize.sync({ force: true, logging: console.log })
     .then(() => {

@@ -7,7 +7,7 @@ const db = {};
 const basename = path.basename(__filename);
 const env = process.env.NODE_ENV || 'development';
 
-// define the sequilize ORM instance and connect it to the db
+// define the sequelize ORM instance and connect it to the db
 const sequelize = new Sequelize(
     process.env.DB_DATABASE, 
     process.env.DB_USERNAME, 
@@ -19,9 +19,9 @@ const sequelize = new Sequelize(
         dialect: process.env.DB_DIALECT,
         schema: process.env.DB_SCHEMA
     });
-console.log(`🚀 sequilize ORM connected to ${process.env.DB_DIALECT} @ ${process.env.DB_HOST}:${process.env.DB_PORT}`);
+console.log(`🚀 sequelize ORM connected to ${process.env.DB_DIALECT} @ ${process.env.DB_HOST}:${process.env.DB_PORT}`);
 
-// loading all sequilize models from the 'models' folder
+// loading all sequelize models from the 'models' folder
 fs.readdirSync(path.join(__dirname, './models'))
     .filter(file => file.indexOf('.') !== 0 && file !== basename && file.slice(-3) === '.js')
     .forEach(file => {

@@ -20,7 +20,7 @@ const server = new ApolloServer({
   },
 });
 
-// once sequilize is up & running, start market data service http listener
+// once sequelize is up & running, start market data service http listener
 server.listen(4000).then(({ url, subscriptionsUrl }) => {
   console.log(`🚀 Server ready at ${url}`);
   console.log(`🚀 Subscriptions ready at ${subscriptionsUrl}`);

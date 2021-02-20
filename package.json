@@ -1,8 +1,8 @@
 {
-  "name": "graphql-sequilize-pg",
+  "name": "graphql-sequelize-pg",
   "private": true,
   "version": "0.0.1",
-  "description": "Graphql Sequilize Postgres Node template",
+  "description": "Graphql Sequelize Postgres Node template",
   "author": "Thomas Reinecke <thr@de.ibm.com>",
   "main": "src/app.js",
   "scripts": {
